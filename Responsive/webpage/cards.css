@@ -1,0 +1,19 @@
+.parent{
+    display: flex;
+    background-color: rgb(114, 117, 4);
+    height: 50vh;
+    justify-content: center;
+}
+
+.content{
+    background-color: rgb(6, 58, 66);
+    color: white;
+    margin: 10px;
+    padding: 10px;
+    width: 50%;
+}
+@media screen and (max-width: 900px){
+    .content{
+        flex-direction: column;
+    }
+}
