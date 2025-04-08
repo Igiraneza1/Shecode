@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .lampOff{
+            background-color: green;
+
+        }
+        .lampOn{
+            background-color: yellow;
+        }
+        #lamp{
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            margin: 20px auto;
+        }
+        #toggleButton{
+            background-color: red;
+            cursor: pointer;
+            width: 70px;
+            padding: 5px;
+            border-radius: 10%;
+        }
+    </style>
+</head>
+<body>
+    <div class="lampOff" id="lamp"></div>
+    <button id="toggleButton">ClickMe</button>
+    <script>
+        const lamp = document.getElementById("lamp");
+        const button = document.getElementById("toggleButton")
+        button
+        .addEventListener('click',()=>{
+            lamp.classList.toggle("lampOff");
+            lamp.classList.toggle("lampOn");
+        })
+    </script>
+</body>
+</html>
